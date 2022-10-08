@@ -5,7 +5,7 @@ import {sequelize} from './database/database.js'
 
 async function main(){
     try {
-        await sequelize.sync({force:false}); //{Alter:true} Si cambia lo agrega {force:true} Elimina y crea de nuevo
+        await sequelize.sync({force:false}); //{Alter:true} Update if detect changes {force:true} Force to recreate the tables
            console.log('Successful database connection. Sequelize are running...')
        app.listen(3000)
            console.log('Server running on port 3000')
