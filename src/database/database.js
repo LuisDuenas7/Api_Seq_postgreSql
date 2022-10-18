@@ -3,7 +3,7 @@ import Sequelize from 'sequelize'
 
 
 
-export const sequelize=new Sequelize('First','postgres','Service07/',{
+export const sequelize=new Sequelize('Project_1','postgres','Service07',{
     host: 'localhost',
     dialect:'postgres'
 });
